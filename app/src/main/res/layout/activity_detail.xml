@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_note_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:textSize="25sp"
+        android:hint="Your note"/>
+
+    <TextView
+        android:id="@+id/tv_time_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_note_content"
+        android:layout_margin="5sp"
+        android:text="Time"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/time_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time_hint"
+        android:layout_margin="5sp"
+        android:textSize="20sp"
+        android:hint="Your time"/>
+    <TextView
+        android:id="@+id/tv_priority_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_content"
+        android:layout_margin="5sp"
+        android:text="Priority"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_priority_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_priority_hint"
+        android:layout_margin="5sp"
+        android:textSize="20sp"
+        android:hint="Low"/>
+
+</RelativeLayout>

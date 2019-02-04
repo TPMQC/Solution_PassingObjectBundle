@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_bottom_row">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/title_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginRight"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="Title: " />
+
+        <TextView
+            android:id="@+id/title_value_TexView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_toRightOf="@id/title_TextView"
+            android:text="N/A" />
+
+        <TextView
+            android:id="@+id/Time_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_TextView"
+            android:layout_marginRight="@dimen/marginRight"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="When: " />
+
+        <TextView
+            android:id="@+id/Time_value_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_TextView"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_toRightOf="@+id/Time_TextView"
+            android:text="N/A" />
+
+        <TextView
+            android:id="@+id/priority_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Time_TextView"
+            android:layout_marginRight="@dimen/marginRight"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:text="Priority: " />
+
+        <TextView
+            android:id="@+id/priority_Value_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Time_TextView"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_toRightOf="@+id/priority_TextView"
+            android:text="N/A" />
+    </RelativeLayout>
+</LinearLayout>
